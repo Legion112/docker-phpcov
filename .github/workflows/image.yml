@@ -30,6 +30,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
+          platforms: linux/arm/v7,linux/arm64/v8,linux/amd64
           build-args: |
             VERSION=${{inputs.version}}
           file: build/docker/Dockerfile
