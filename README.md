@@ -2,6 +2,8 @@
 Dockerfile for https://github.com/sebastianbergmann/phpcov
 
 # To build 
+[Using github](https://github.com/Legion112/docker-phpcov/actions/workflows/image.yml)
+
 use `version=6.0.1` for phpunit 8
 use `version=8.0.0` for phpunit 9
 ## Build example 
