@@ -33,4 +33,4 @@ jobs:
           build-args: |
             VERSION=${{inputs.version}}
           file: build/docker/Dockerfile
-          tags: fearofcode/phpcov:${{github.sha}}
+          tags: fearofcode/phpcov:${{inputs.version}}
