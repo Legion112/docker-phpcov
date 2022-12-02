@@ -10,8 +10,9 @@ on:
 
 jobs:
   build-image:
-    matrix:
-      php: ['8.1-cli-alpine', '7.4-cli-alpine']
+    strategy:
+      matrix:
+        php: ['8.1-cli-alpine', '7.4-cli-alpine']
     runs-on: ubuntu-latest
     steps:
       -
