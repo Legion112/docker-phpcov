@@ -1,5 +1,8 @@
-ARG TAG="8.1-cli-alpine"
-ARG VERSION
+ARG VERSION=8
+ARG PHP_TAG="8.1-cli-alpine"
+FROM fearofcode/phive:${PHP_TAG}-0.15.2
+RUN phive install phpcov@$VERSION --global --copy
+
 FROM php:$TAG
 
 ENV XDEBUG_MODE=coverage
