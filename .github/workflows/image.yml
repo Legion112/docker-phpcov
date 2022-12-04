@@ -36,6 +36,6 @@ jobs:
           platforms: linux/arm/v7,linux/arm64/v8,linux/amd64
           build-args: |
             VERSION=${{inputs.version}}
-            base=${{ matrix.php }}
+            PHP_TAG=${{ matrix.php }}
           file: build/docker/Dockerfile
           tags: fearofcode/phpcov:${{ matrix.php }}-${{inputs.version}}
